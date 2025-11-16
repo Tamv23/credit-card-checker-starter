@@ -1,4 +1,5 @@
 //codecademy - Challenge Project: Credit Card Checker
+// Below arrays provided by codecademy
 
 // All valid credit card numbers
 const valid1 = [4, 5, 3, 9, 6, 7, 7, 9, 0, 8, 0, 1, 6, 8, 0, 8]
@@ -24,10 +25,9 @@ const mystery5 = [4, 9, 1, 3, 5, 4, 0, 4, 6, 3, 0, 7, 2, 5, 2, 3]
 // An array of all the arrays above
 const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, invalid3, invalid4, invalid5, mystery1, mystery2, mystery3, mystery4, mystery5]
 
+// Added my own functions below:
 
-// Add your functions below:
-
-/* Task 1: 
+// Task 1: 
 /* Create a function, validateCred() that has a parameter of an array. The purpose of validateCred() is to return true when an array contains digits of 
 a valid credit card number and false when it is invalid. This function should NOT mutate the values of the original array. */
 
@@ -76,7 +76,6 @@ return invalidCardNest;
 }
 const invalidCards = findInvalidCards(batch); // 
 console.log(findInvalidCards(batch)); 
-
 
 //Task 3: 
 /*After finding all the invalid credit card numbers, it is also necessary to identify the credit card companies that have possibly issued these faulty numbers. 
@@ -137,7 +136,6 @@ const idInvalidCardCompanies = (nestedArrayInvlNums) => {
 
 console.log (idInvalidCardCompanies(invalidCards));
 
-
 //Task 4 : 
 /* To make it easier to test credit card numbers, create a function that accepts a string and 
 converts it into an array of numbers like the initially provided arrays.*/
@@ -171,6 +169,3 @@ const stringToArray = (cardString) => {
 //testing it : 
 
 console.log(stringToArray("4539677908016808"));
-
-
-
